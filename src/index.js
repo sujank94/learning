@@ -15,3 +15,8 @@ if (require.main === module) {
 }
 
 module.exports = app;
+
+app.get('/', (req, res) => {
+  res.send('Hello World! App is running!');
+});
+

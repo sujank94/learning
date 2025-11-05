@@ -1,0 +1,26 @@
+{
+  "name": "sample-node-app",
+  "version": "0.1.0",
+  "description": "A small sample Node.js Express app with CI and tests",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "jest --runInBand",
+    "lint": "echo \"No linter configured\"",
+    "docker:build": "docker build -t sample-node-app ."
+  },
+  "author": "sujank94",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "jest": "^29.6.1",
+    "supertest": "^6.3.3",
+    "nodemon": "^2.0.22"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
